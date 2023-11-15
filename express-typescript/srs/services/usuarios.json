@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "nombre": "John Doe",
+        "correoelectronico": "john.doe@example.com",
+        "contraseña": "securePassword123",
+        "fechadecreacion": "2023-11-14T15:45:00Z",
+        "usuariodeactualizacion": "Admin",
+        "activo": true 
+    },
+    {
+        "id": 2,
+        "nombre": "Alice Smith",
+        "correoelectronico": "alice.smith@gmail.com",
+        "contraseña": "shopperPass789",
+        "fechadecreacion": "2023-11-14T10:20:00Z",
+        "usuariodeactualizacion": "Admin",
+        "activo": true
+    },
+    {
+        "id": 3,
+        "nombre": "Robert Johnson",
+        "correoelectronico": "robert.johnson@bank.com",
+        "contraseña": "secureBankPass456",
+        "fechadecreacion": "2023-11-14T08:55:00Z",
+        "usuariodeactualizacion": "Admin",
+        "activo": true
+    },
+    {
+        "id": 4,
+        "nombre": "Elena Rodriguez",
+        "correoelectronico": "elena.rodriguez@company.com",
+        "contraseña": "employeePass789",
+        "fechadecreacion": "2023-11-14T12:10:00Z",
+        "usuariodeactualizacion": "Admin",
+        "activo": true
+    },
+    {
+        "id": 5,
+        "nombre": "Carlos Ramirez",
+        "correoelectronico": "carlos.ramirez@student.edu",
+        "contraseña": "eduPass123",
+        "fechadecreacion": "2023-11-14T14:30:00Z",
+        "usuariodeactualizacion": "Admin",
+        "activo": true
+    }
+            
+]
