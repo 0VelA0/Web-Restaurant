@@ -15,3 +15,5 @@ export interface UsuarioEntry {
   usuariodeactualizacion: string
   activo: boolean
 }
+
+export type newuserEntry = Omit<UsuarioEntry, 'id'>
