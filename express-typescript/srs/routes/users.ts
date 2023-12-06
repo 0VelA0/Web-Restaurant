@@ -28,4 +28,18 @@ router.post('/', (req, res) => {
   }
 })
 
+router.delete('/:id', (req, res) => {
+  try {
+    const userDeleted = usersServices.deletebyid(+req.params.id)
+
+    if (userDeleted) {
+      res.status(200).json({ message: 'Usuario eliminado correctamente' })
+    } else {
+      res.status(404).json({ message: 'Usuario no encontrado' })
+    }
+  } catch (error) {
+    console.error('Error al eliminar usuario:', error)
+    res.status(500).json({ message: 'Error interno del servidor' })
+  }
+})
 export default router

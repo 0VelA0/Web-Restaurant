@@ -16,3 +16,14 @@ export const findbyid = (id: number): UsuarioEntry | undefined => {
   const entry = usuarios.find(d => d.id === id)
   return entry
 }
+
+export const deletebyid = (id: number): boolean => {
+  const usuarioIndex = usuarios.findIndex(u => u.id === id)
+
+  if (usuarioIndex !== -1) {
+    usuarios.splice(usuarioIndex, 1)
+    return true // Se eliminó el usuario correctamente
+  }
+
+  return false // El usuario no fue encontrado
+}
