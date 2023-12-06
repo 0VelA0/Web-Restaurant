@@ -1,5 +1,6 @@
 import express from 'express'
 import * as usersServices from '../services/usersServices'
+import toNewUserEntry from '../utils'
 
 const router = express.Router()
 
@@ -16,16 +17,14 @@ router.get('/:id', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-  try{
-    
+  try {
     const NewUserEntry = toNewUserEntry(req.body)
 
     const AddedUserEntry = usersServices.addUser(NewUserEntry)
-    
 
     res.json(AddedUserEntry)
-  } catch (e) {
-    res.status(400).send(e.message)
+  } catch (error: any) {
+    res.status(400).send(error.message)
   }
 })
 

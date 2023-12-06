@@ -1,112 +1,120 @@
-import {NewUserEntry, generos} from  './types'
+import { NewUserEntry, generos } from './types'
 
 const parsenombre = (name: any): string => {
-    if(!isString(name)){
-        throw new Error('Incorrect or missing name')
-    }
+  if (!isString(name)) {
+    throw new Error('Incorrect or missing name')
+  }
 
-    return name
+  return name
 }
 
 const parsegenero = (genero: any): generos => {
-    if (!isString(genero) || !isGenero(genero)){
-        throw new Error('Incorrect or mising gender')
-    }
+  if (!isString(genero) || !isGenero(genero)) {
+    throw new Error('Incorrect or mising gender')
+  }
 
-    return genero
+  return genero
 }
 
-const parseedad = (edad: any): number =>{
-    if (!isNumber(edad)){
-        throw new Error('Incorrect or missing age')
-    }
+const parseedad = (edad: any): number => {
+  if (!isNumber(edad)) {
+    throw new Error('Incorrect or missing age')
+  }
 
-    return edad
+  return edad
 }
 
 const parsecorreo = (correo: any): string => {
-    if(!isString(correo)){
-        throw new Error('Incorrect or missing mail')
-    }
+  if (!isString(correo)) {
+    throw new Error('Incorrect or missing mail')
+  }
 
-    return correo
-}  
+  return correo
+}
 
 const parsecontraseña = (contraseñareq: any): string => {
-    if(!isString(contraseñareq)){
-        throw new Error('Incorrect or missing password')
-    }
+  if (!isString(contraseñareq)) {
+    throw new Error('Incorrect or missing password')
+  }
 
-    return contraseñareq
+  return contraseñareq
 }
 
 const parsefdc = (fdc: any): string => {
-    if(!isDate(fdc) || !isString(fdc)){
-        throw new Error('Incorrect or missing date')
-    }
+  if (!isDate(fdc) || !isString(fdc)) {
+    throw new Error('Incorrect or missing date')
+  }
 
-    return fdc
-} 
+  return fdc
+}
 
 const parseuc = (uc: any): string => {
-    if(!isString(uc)){
-        throw new Error('Incorrect or missing User')
-    }
+  if (!isString(uc)) {
+    throw new Error('Incorrect or missing User')
+  }
 
-    return uc
+  return uc
 }
 
 const parsefda = (fda: any): string => {
-    if(!isString(fda) || !isDate(fda)){
-        throw new Error('Incorrect or missing Date')
-    }
+  if (!isString(fda) || !isDate(fda)) {
+    throw new Error('Incorrect or missing Date')
+  }
 
-    return fda
+  return fda
 }
 
 const parseuda = (uda: any): string => {
-    if(!isString(uda)){
-        throw new Error('Incorrect or missing user')
-    }
+  if (!isString(uda)) {
+    throw new Error('Incorrect or missing user')
+  }
 
-    return uda
+  return uda
 }
 
-const parseactivo = (active: boolean): boolean => {
-    
+const parseactivo = (act: any): boolean => {
+  if (!isBoolean(act)) {
+    throw new Error('Incorrect or missing state')
+  }
+
+  return act
 }
 
 const isGenero = (gen: any): boolean => {
-    return Object.values(generos).includes(gen)
-} 
+  return Object.values(generos).includes(gen)
+}
 
 const isNumber = (number: number): boolean => {
-    return typeof number === 'number'
+  return typeof number === 'number'
 }
 
 const isString = (string: string): boolean => {
-    return typeof string === 'string'
+  return typeof string === 'string'
 }
 
 const isDate = (date: string): boolean => {
-    return Boolean(Date.parse(date))
+  return Boolean(Date.parse(date))
+}
+
+const isBoolean = (bool: string): boolean => {
+  return typeof bool === 'boolean'
 }
 
 const toNewUserEntry = (object: any): NewUserEntry => {
-    const newEntry: NewUserEntry = {
-        nombre: parsenombre(object.nombre),
-        genero: parsegenero(object.genero),
-        edad: parseedad(object.edad),
-        correoelectronico: parsecorreo(object.correoelectronico),
-        contraseña: parsecontraseña(object.contraseña),
-        fechadecreacion: parsefdc(object.fechadecreacion),
-        usuariodecreacion: parseuc(object.usuariodecreacion),
-        fechadeactualizacion: parsefda(object.fechadeactualizacion),
-        usuariodeactualizacion: parseuda(object.usuariodeactualizacion),
-        activo: parseactivo(object.activo)
-    }
+  const newEntry: NewUserEntry = {
+    nombre: parsenombre(object.nombre),
+    genero: parsegenero(object.genero),
+    edad: parseedad(object.edad),
+    correoelectronico: parsecorreo(object.correoelectronico),
+    contraseña: parsecontraseña(object.contraseña),
+    fechadecreacion: parsefdc(object.fechadecreacion),
+    usuariodecreacion: parseuc(object.usuariodecreacion),
+    fechadeactualizacion: parsefda(object.fechadeactualizacion),
+    usuariodeactualizacion: parseuda(object.usuariodeactualizacion),
+    activo: parseactivo(object.activo)
+  }
 
-    return newEntry
+  return newEntry
 }
 
 export default toNewUserEntry
