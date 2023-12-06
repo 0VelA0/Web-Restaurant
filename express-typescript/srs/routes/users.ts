@@ -16,22 +16,17 @@ router.get('/:id', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-  const { nombre, genero, edad, correoelectronico, contraseña, fechadecreacion, usuariodecreacion, fechadeactualizacion, usuariodeactualizacion, activo } = req.body
+  try{
+    
+    const NewUserEntry = toNewUserEntry(req.body)
 
-  const newuserEntry = usersServices.addUser({
-    nombre,
-    genero,
-    edad,
-    correoelectronico,
-    contraseña,
-    fechadecreacion,
-    usuariodecreacion,
-    fechadeactualizacion,
-    usuariodeactualizacion,
-    activo
-  })
+    const AddedUserEntry = usersServices.addUser(NewUserEntry)
+    
 
-  res.json(newuserEntry)
+    res.json(AddedUserEntry)
+  } catch (e) {
+    res.status(400).send(e.message)
+  }
 })
 
 export default router
