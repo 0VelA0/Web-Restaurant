@@ -27,3 +27,15 @@ export const deletebyid = (id: number): boolean => {
 
   return false // El usuario no fue encontrado
 }
+
+export const updatebyid = (id: number, updatedData: Partial<UsuarioEntry>): UsuarioEntry | undefined => {
+  const user = findbyid(id)
+
+  if (user != null) {
+    Object.assign(user, updatedData)
+
+    return user
+  }
+
+  return undefined // El usuario no fue encontrado
+}
