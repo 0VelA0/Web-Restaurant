@@ -117,4 +117,6 @@ const toNewUserEntry = (object: any): NewUserEntry => {
   return newEntry
 }
 
+
+
 export default toNewUserEntry

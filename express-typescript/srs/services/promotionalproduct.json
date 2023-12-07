@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "nombre": "Enchiladas Suizas",
+        "descripcion": "Tortillas rellenas de pollo bañadas en salsa verde y gratinadas con queso.",
+        "endescuento": true,
+        "descuento": 10,
+        "precio": 20.99,
+        "precioenpromocion": 18.89,
+        "fechadeiniciodelapromocion": "2023-11-17",
+        "fechadefinalizaciondelapromocion": "2023-11-24",
+        "activo": true
+    },
+    {
+        "id": 2,
+        "nombre": "Pizza Margarita",
+        "descripcion": "Pizza clásica con tomate, mozzarella y albahaca fresca.",
+        "endescuento": false,
+        "descuento": 0,
+        "precio": 15.99,
+        "precioenpromocion": 0,
+        "fechadeiniciodelapromocion": "",
+        "fechadefinalizaciondelapromocion": "",
+        "activo": true
+    },
+    {
+        "id": 3,
+        "nombre": "Sushi Variado",
+        "descripcion": "Variedad de rollos de sushi con pescado fresco y aguacate.",
+        "endescuento": true,
+        "descuento": 15,
+        "precio": 25.99,
+        "precioenpromocion": 22.09,
+        "fechadeiniciodelapromocion": "2023-11-20",
+        "fechadefinalizaciondelapromocion": "2023-11-27",
+        "activo": true
+    },
+    {
+        "id": 4,
+        "nombre": "Ensalada César",
+        "descripcion": "Ensalada fresca con lechuga, pollo a la parrilla, crutones y aderezo César.",
+        "endescuento": false,
+        "descuento": 0,
+        "precio": 12.99,
+        "precioenpromocion": 0,
+        "fechadeiniciodelapromocion": "",
+        "fechadefinalizaciondelapromocion": "",
+        "activo": true
+    },
+    {
+        "id": 5,
+        "nombre": "Tacos al Pastor",
+        "descripcion": "Tacos tradicionales con carne de cerdo adobada, piña y cebolla.",
+        "endescuento": true,
+        "descuento": 12,
+        "precio": 14.99,
+        "precioenpromocion": 13.19,
+        "fechadeiniciodelapromocion": "2023-11-22",
+        "fechadefinalizaciondelapromocion": "2023-11-29",
+        "activo": true
+    }
+    
+]

@@ -1,0 +1,177 @@
+[
+    {
+        "id": 1,
+        "descripcion": "Compra de platillos variados para la familia",
+        "nombredelcliente": "Juan Pérez",
+        "preciototal": 48.75,
+        "totaldeproductos": 3,
+        "fechadecreacion": "2023-11-22",
+        "usuariodecreacion": "usuario123",
+        "fechadeactualizacion": "2023-11-22",
+        "usuariodeactualizacion": "usuario123",
+        "activo": true,
+        "detalladodecompra": [
+            {
+                "id": 1,
+                "producto": "Pizza Margarita",
+                "orden": 1,
+                "usuariodecreacion": "usuario123",
+                "fechadeactualizacion": "2023-11-22"
+            },
+            {
+                "id": 2,
+                "producto": "Hamburguesa Clásica",
+                "orden": 2,
+                "usuariodecreacion": "usuario123",
+                "fechadeactualizacion": "2023-11-22"
+            },
+            {
+                "id": 3,
+                "producto": "Tacos al Pastor",
+                "orden": 3,
+                "usuariodecreacion": "usuario123",
+                "fechadeactualizacion": "2023-11-22"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "descripcion": "Pedido para evento corporativo",
+        "nombredelcliente": "Empresa XYZ",
+        "preciototal": 90.99,
+        "totaldeproductos": 5,
+        "fechadecreacion": "2023-11-23",
+        "usuariodecreacion": "usuario456",
+        "fechadeactualizacion": "2023-11-23",
+        "usuariodeactualizacion": "usuario456",
+        "activo": true,
+        "detalladodecompra": [
+            {
+                "id": 4,
+                "producto": "Ensalada César",
+                "orden": 1,
+                "usuariodecreacion": "usuario456",
+                "fechadeactualizacion": "2023-11-23"
+            },
+            {
+                "id": 5,
+                "producto": "Pasta Alfredo",
+                "orden": 2,
+                "usuariodecreacion": "usuario456",
+                "fechadeactualizacion": "2023-11-23"
+            },
+            {
+                "id": 6,
+                "producto": "Sushi Variado",
+                "orden": 3,
+                "usuariodecreacion": "usuario456",
+                "fechadeactualizacion": "2023-11-23"
+            },
+            {
+                "id": 7,
+                "producto": "Pastel de Chocolate",
+                "orden": 4,
+                "usuariodecreacion": "usuario456",
+                "fechadeactualizacion": "2023-11-23"
+            },
+            {
+                "id": 8,
+                "producto": "Bebidas Variadas",
+                "orden": 5,
+                "usuariodecreacion": "usuario456",
+                "fechadeactualizacion": "2023-11-23"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "descripcion": "Almuerzo en familia",
+        "nombredelcliente": "Ana García",
+        "preciototal": 35.5,
+        "totaldeproductos": 2,
+        "fechadecreacion": "2023-11-24",
+        "usuariodecreacion": "usuario789",
+        "fechadeactualizacion": "2023-11-24",
+        "usuariodeactualizacion": "usuario789",
+        "activo": true,
+        "detalladodecompra": [
+            {
+                "id": 9,
+                "producto": "Hamburguesa Vegana",
+                "orden": 1,
+                "usuariodecreacion": "usuario789",
+                "fechadeactualizacion": "2023-11-24"
+            },
+            {
+                "id": 10,
+                "producto": "Ensalada de Quinoa",
+                "orden": 2,
+                "usuariodecreacion": "usuario789",
+                "fechadeactualizacion": "2023-11-24"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "descripcion": "Cena especial para dos",
+        "nombredelcliente": "María Rodríguez",
+        "preciototal": 42.75,
+        "totaldeproductos": 2,
+        "fechadecreacion": "2023-11-25",
+        "usuariodecreacion": "usuario101",
+        "fechadeactualizacion": "2023-11-25",
+        "usuariodeactualizacion": "usuario101",
+        "activo": true,
+        "detalladodecompra": [
+            {
+                "id": 11,
+                "producto": "Parrillada Mixta",
+                "orden": 1,
+                "usuariodecreacion": "usuario101",
+                "fechadeactualizacion": "2023-11-25"
+            },
+            {
+                "id": 12,
+                "producto": "Vino Tinto Reserva",
+                "orden": 2,
+                "usuariodecreacion": "usuario101",
+                "fechadeactualizacion": "2023-11-25"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "descripcion": "Merienda para amigas",
+        "nombredelcliente": "Laura Martínez",
+        "preciototal": 24.99,
+        "totaldeproductos": 3,
+        "fechadecreacion": "2023-11-26",
+        "usuariodecreacion": "usuario121",
+        "fechadeactualizacion": "2023-11-26",
+        "usuariodeactualizacion": "usuario121",
+        "activo": true,
+        "detalladodecompra": [
+            {
+                "id": 13,
+                "producto": "Mini Pizzas Variadas",
+                "orden": 1,
+                "usuariodecreacion": "usuario121",
+                "fechadeactualizacion": "2023-11-26"
+            },
+            {
+                "id": 14,
+                "producto": "Batidos de Frutas",
+                "orden": 2,
+                "usuariodecreacion": "usuario121",
+                "fechadeactualizacion": "2023-11-26"
+            },
+            {
+                "id": 15,
+                "producto": "Pastelitos Dulces",
+                "orden": 3,
+                "usuariodecreacion": "usuario121",
+                "fechadeactualizacion": "2023-11-26"
+            }
+        ]
+    }
+]
