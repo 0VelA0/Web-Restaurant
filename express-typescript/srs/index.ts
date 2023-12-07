@@ -1,5 +1,5 @@
 import express from 'express'
-import diaryRouter from './routes/users'
+import UserRouter from './routes/users'
 const app = express()
 app.use(express.json())
 
@@ -10,7 +10,7 @@ app.get('/ping', (_req, res) => {
   res.send('pong')
 })
 
-app.use('/api/users', diaryRouter)
+app.use('/api/users', UserRouter)
 
 app.listen(PORT, () => {
   console.log('Server is running on port', { PORT })

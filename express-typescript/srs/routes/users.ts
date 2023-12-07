@@ -42,4 +42,21 @@ router.delete('/:id', (req, res) => {
     res.status(500).json({ message: 'Error interno del servidor' })
   }
 })
+
+router.put('/:id', async (req, res) => {
+  const userId = parseInt(req.params.id, 10);
+
+  try {
+    const updatedUser = await usersServices.updatebyid(userId, req.body);
+
+    if (updatedUser) {
+      res.json(updatedUser);
+    } else {
+      res.sendStatus(404);
+    }
+  } catch (error) {
+    console.error('Error al actualizar usuario:', error);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+});
 export default router

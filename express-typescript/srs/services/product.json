@@ -1,0 +1,19 @@
+[
+    {
+        "id":1,
+        "nombre":"",
+        "descripcion":"",
+        "precio":"",
+        "categoria":"",
+        "fabricante":"",
+        "cantidadenexistencia":10,
+        "unidaddemedidad":"",
+        "fechadecreacion":"",
+        "usuariodecreacion":"",
+        "fechadeactualizacion":"",
+        "usuariodeactualizacion":"",
+        "activo": true,
+        "ingredientes":"",
+        "vegano": true
+    }
+]

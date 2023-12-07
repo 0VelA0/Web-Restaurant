@@ -21,7 +21,8 @@
     "typescript": "5.2.2"
   },
   "dependencies": {
-    "express": "4.18.2"
+    "express": "4.18.2",
+    "fs.promises": "^0.1.2"
   },
   "eslintConfig": {
     "parserOptions": {
